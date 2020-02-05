@@ -6,9 +6,6 @@ module DaimonMarkdown
     class UnknownPluginError < StandardError
     end
 
-    class Error < StandardError
-    end
-
     class << self
       def lookup(name)
         PLUGIN_REGISTRY.fetch(name)
